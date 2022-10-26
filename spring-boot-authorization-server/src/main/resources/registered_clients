@@ -1,0 +1,32 @@
+//
+//        RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
+//                .clientId(UUID.randomUUID().toString())
+//                .clientSecret(passwordEncoder().encode("T0maz01981"))
+//                .clientName("АИС ПДОП")
+//                .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
+//                .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+//                .redirectUri("http://10.252.14.24:3000/login")
+//                .tokenSettings(TokenSettings.builder()
+//                        .accessTokenTimeToLive(Duration.ofMinutes(60))
+//                        .build())
+//                .scope(OidcScopes.OPENID)
+//                .scope(OidcScopes.EMAIL)
+//                .clientSettings(ClientSettings.builder().setting("logo", "Some LOGO").build())
+//                .build();
+//        RegisteredClient registeredClient1 = RegisteredClient.withId(UUID.randomUUID().toString())
+//                .clientId(UUID.randomUUID().toString())
+//                .clientSecret(passwordEncoder().encode("110184"))
+//                .clientName("АИС НИПС")
+//                .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_POST)
+//                .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+//                .redirectUri("http://10.252.14.24:3000/login")
+//                .tokenSettings(TokenSettings.builder()
+//                        .accessTokenTimeToLive(Duration.ofMinutes(60))
+//                        .build())
+//                .scope(OidcScopes.OPENID)
+//                .clientSettings(ClientSettings.builder().setting("logo", "Some LOGO").build())
+//                .build();
+//        JdbcRegisteredClientRepository jdbcRegisteredClientRepository = new JdbcRegisteredClientRepository(jdbcTemplate);
+//        jdbcRegisteredClientRepository.save(registeredClient);
+//        jdbcRegisteredClientRepository.save(registeredClient1);
+//        return jdbcRegisteredClientRepository;

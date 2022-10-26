@@ -15,11 +15,11 @@ spring:
         registration:
           products-client-client-credentials:
             provider: spring
-            client-id: products-client
-            client-secret: secret
-            authorization-grant-type: client_credentials
+            client-id: icceto
+            client-secret: 123456
+            authorization-grant-type: authorization_code
             client-name: products-client-client-credentials
-            scope: products.read
+            scope: openid
         provider:
           spring:
-            issuer-uri: http://auth-server:9000
+            issuer-uri: http://oauth-server:9000

@@ -7,3 +7,23 @@ logging:
     org.springframework.web: INFO
     org.springframework.security: INFO
     org.springframework.security.oauth2: INFO
+oauth:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/?useSSL=false&serverTimezone=UTC
+  user: root
+  password: T0maz01981
+  hikari.connection-timeout: 30000
+  hikari.idle-timeout: 10000
+  hikari.minimum-idle: 10
+  hikari.maximum-pool-size: 20
+  hikari.max-lifetime: 30000
+#---------------------- SSL CONFIGURATION FOR ACCESS SERVICE -----------
+client:
+  default-uri: http://taccess.mvr.bg:27015/accessSoap/access.wsdl
+  ssl:
+    keystore-password: T0maz01981
+    keystore-path: classpath:certificates/taccess.mvr.bg.jks
+
+  #---------------------nps subsystems-----------------
+subsystem:
+  codes: 33001,33200,33300,33400,33500,33600,33700,33800,33900

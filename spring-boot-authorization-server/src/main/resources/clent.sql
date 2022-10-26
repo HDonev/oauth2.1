@@ -1,0 +1,15 @@
+-- CREATE TABLE oauth2_registered_client (
+--                                           id varchar(100) NOT NULL,
+--                                           client_id varchar(100) NOT NULL,
+--                                           client_id_issued_at DATETIME YEAR TO SECOND DEFAULT CURRENT YEAR TO SECOND NOT NULL,
+--                                           client_secret varchar(200) DEFAULT NULL,
+--                                           client_secret_expires_at DATETIME YEAR TO SECOND NULL DEFAULT NULL,
+--                                           client_name varchar(200) NOT NULL,
+--                                           client_authentication_methods lvarchar(1000) NOT NULL,
+--                                           authorization_grant_types lvarchar(1000) NOT NULL,
+--                                           redirect_uris lvarchar(1000) DEFAULT NULL,
+--                                           scopes lvarchar(1000) NOT NULL,
+--                                           client_settings lvarchar(2000) NOT NULL,
+--                                           token_settings lvarchar(2000) NOT NULL,
+--                                           PRIMARY KEY (id)
+-- );
